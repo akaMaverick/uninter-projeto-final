@@ -1,21 +1,4 @@
-ocument.addEventListener('DOMContentLoaded', () => {
-
-    const header = document.querySelector('header.main-header');
-    const button = document.createElement('button');
-    button.style.background = '#4caf50';
-    button.style.color = '#fff';
-    button.style.border = 'none';
-    button.style.padding = '10px 20px';
-    button.style.borderRadius = '5px';
-    button.style.cursor = 'pointer';
-    button.style.marginTop = '1rem';
-    button.style.fontSize = '1rem';
-
-    button.addEventListener('click', () => {
-        alert('Bem-vindo à Consciência Ambiental! Descubra como você pode ajudar o planeta.');
-    });
-
-    header.appendChild(button);
+document.addEventListener('DOMContentLoaded', () => {
 
     const navLinks = document.querySelectorAll('nav ul.nav-list li a');
     navLinks.forEach(link => {
@@ -27,7 +10,6 @@ ocument.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Adiciona rolagem suave apenas para links internos
     navLinks.forEach(link => {
         if (link.getAttribute('href').startsWith('#')) {
             link.addEventListener('click', event => {
